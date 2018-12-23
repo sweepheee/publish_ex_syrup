@@ -8,26 +8,12 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/fullpage.min.css">
 <script>
-  /*  if (/Edge/.test(navigator.userAgent)) {
-      alert('현재 크롬 브라우저만 지원됩니다 ㅠㅠㅈㅅㅈㅅ1');
-    }
-
-    if(navigator.userAgent.indexOf("Chrome") != -1 )
-    {
-    }else {
-      alert("현재 크롬브라우저만 지원됩니다 ㅈㅅㅈㅅㅠㅠ ");
-    }
-
-     */
 
     var agent = navigator.userAgent.toLowerCase();
-    var ie_not = document.getElementsByClassName("select__join");
     if ( (navigator.appName == 'Netscape' && agent.indexOf('trident') != -1) || (agent.indexOf("msie") != -1)) {
      // ie일 경우
-     alert("지원하지 않는 브라우저입니다. 크롬, 오페라, 웨일브라우저를 이용해주세요.");
+     alert("이 페이지는 크롬, 오페라, 웨일브라우저에 최적화되어 있습니다.");
    }
-
-    if(screen.width)
 
   </script>
 </head>
@@ -356,7 +342,6 @@
 
       if ( (navigator.appName == 'Netscape' && agent.indexOf('trident') != -1) || (agent.indexOf("msie") != -1)) {
        // ie일 경우
-       alert("지원하지 않는 브라우저입니다. 크롬, 오페라, 웨일브라우저를 이용해주세요.");
        container.classList.add(none);
        var mobile_join_info = document.querySelector(".mobile_join_info");
        mobile_join_info.classList.remove("mobile_join_info");
